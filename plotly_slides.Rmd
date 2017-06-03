@@ -1,0 +1,27 @@
+---
+title: "Plotly showcase"
+author: "Erik Altink"
+date: "3-6-2017"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+# My Plotly Example
+
+This presentation contains a nice Plotly example.
+This graph is placed on the next slide
+Click right of this slide to proceed to the next slide
+
+# My Plotly Graph
+
+```{r, include=FALSE}
+library(plotly)
+```
+
+```{r}
+plot_ly(CO2, x = ~uptake, y = ~Plant, color = ~Plant, type = "box")
+```
+
+
+# Thank you!
